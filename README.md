@@ -122,6 +122,7 @@ If you reference or use **WASM Contact Cipher** in academic literature or system
 * **Author:** [Dean Price](https://www.deanprice.com/) — MSc Computer Science (Distinction), University of Hertfordshire
 * **ORCID:** [0009-0001-4937-2409](https://orcid.org/0009-0001-4937-2409)
 * **Concept DOI:** [10.5281/zenodo.23826355](https://doi.org/10.5281/zenodo.23826355)
+* **Software Heritage:** [Archived Origin](https://archive.softwareheritage.org/browse/origin/directory/?origin_url=https://github.com/DeanPriceCom/wasm-contact-cipher)
 * **Production Reference:** [https://www.deanprice.com/](https://www.deanprice.com/) ([`DeanPriceCom/deanprice.com`](https://github.com/DeanPriceCom/deanprice.com))
 
 ## License
