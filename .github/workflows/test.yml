@@ -40,3 +40,19 @@ jobs:
 
       - name: Verify js/wasm cross-compilation
         run: GOOS=js GOARCH=wasm go build -o /dev/null ./examples/wasm
+
+      - name: Set up TinyGo
+        uses: acifani/setup-tinygo@v2
+        with:
+          tinygo-version: '0.41.1'
+
+      - name: Verify TinyGo micro-WASM compilation (<50 KB)
+        run: |
+          tinygo build -opt=z -no-debug -panic=trap -target wasm -o /tmp/example.wasm ./examples/wasm
+          WASM_BYTES=$(wc -c < /tmp/example.wasm)
+          echo "Compiled TinyGo example.wasm size: ${WASM_BYTES} bytes"
+          if [ "$WASM_BYTES" -le 0 ] || [ "$WASM_BYTES" -gt 51200 ]; then
+            echo "::error::TinyGo example.wasm size (${WASM_BYTES} bytes) exceeds 50 KB (51200 bytes) micro-WASM budget!"
+            exit 1
+          fi
+          rm -f /tmp/example.wasm
