@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+type: software
+message: "If you reference or use this software in research or systems engineering, please cite it as below."
+title: "WASM Contact Cipher: Client-Side WebAssembly Keystream Obfuscation Routines"
+authors:
+  - family-names: Price
+    given-names: Dean
+    orcid: "https://orcid.org/0009-0001-4937-2409"
+license: "MIT"
+repository-code: "https://github.com/DeanPriceCom/wasm-contact-cipher"
+url: "https://www.deanprice.com/"
+abstract: "Deterministic client-side WebAssembly keystream obfuscation engine designed to mitigate automated static email and telephone web scrapers using domain-bound keystreams."
+keywords:
+  - webassembly
+  - tinygo
+  - anti-scraping
+  - obfuscation
+  - scraper-mitigation
+  - go
