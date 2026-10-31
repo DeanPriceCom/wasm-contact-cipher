@@ -1,6 +1,7 @@
 # WASM Contact Cipher (`deanprice.com/wasm-contact-cipher`)
 
 [![Go Reference](https://pkg.go.dev/badge/deanprice.com/wasm-contact-cipher.svg)](https://pkg.go.dev/deanprice.com/wasm-contact-cipher)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23826355.svg)](https://doi.org/10.5281/zenodo.23826355)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 **WASM Contact Cipher** (`package contactcipher`) is a zero-dependency, deterministic symmetric XOR keystream engine written in Go for **TinyGo** and standard **WebAssembly (`js/wasm`)** applications. It mitigates automated static email, telephone, and messaging web scrapers by binding pre-obfuscated contact payloads to the active browser hostname at runtime.
@@ -99,12 +100,29 @@ tinygo build -opt=z -no-debug -panic=trap -target wasm -o main.wasm ./examples/w
 
 ---
 
+## Citation
+
+If you reference or use **WASM Contact Cipher** in academic literature or systems engineering, please cite the evergreen Concept DOI (**[10.5281/zenodo.23826355](https://doi.org/10.5281/zenodo.23826355)**) or [`CITATION.cff`](CITATION.cff):
+
+```bibtex
+@software{price_wasm_contact_cipher_2026,
+  author       = {Price, Dean},
+  title        = {{WASM Contact Cipher: Client-Side WebAssembly Keystream Obfuscation Routines}},
+  year         = {2026},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.23826355},
+  url          = {https://doi.org/10.5281/zenodo.23826355}
+}
+```
+
+---
+
 ## Author & Attribution
 
 * **Author:** [Dean Price](https://www.deanprice.com/) — MSc Computer Science (Distinction), University of Hertfordshire
 * **ORCID:** [0009-0001-4937-2409](https://orcid.org/0009-0001-4937-2409)
+* **Concept DOI:** [10.5281/zenodo.23826355](https://doi.org/10.5281/zenodo.23826355)
 * **Production Reference:** [https://www.deanprice.com/](https://www.deanprice.com/) ([`DeanPriceCom/deanprice.com`](https://github.com/DeanPriceCom/deanprice.com))
-* **Citation:** Machine-readable citation metadata is provided in [`CITATION.cff`](CITATION.cff) (Citation File Format 1.2.0).
 
 ## License
 
